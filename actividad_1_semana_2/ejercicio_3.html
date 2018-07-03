@@ -4,30 +4,134 @@
 	<meta charset="utf-8">
 	<title>Box Model</title>
 	<style>
+	html, body{
+		padding: 0px;
+		margin: 0px;
+	}
 	.spain {
-		width: 200px;
+		width: 260px;
 		display: block;
 		float: left;
+		margin-left: 135px;
+		
 	}
-	.box1, .box3, .box2 {
-			height: 40px;
+	.spain1, .spain3, .spain2 {
+			height: 50px;
 			background-color: red;
 			width: 100% ;
 			float: left;
 		}
-	.box2{ 
-			height: 60px;
+	.spain2{ 
+			height: 70px;
 			background-color: yellow;
+	}
+	.dinamarca{
+		width: 260px;
+		display: block;
+		float: right;
+		margin-right: 120px
+	}
+	.dinam1, .dinam2, .dinam3, .dinam4{
+		background-color: red;
+		display: inline-block;
+		width: 74px;
+		height: 74px;
+		position: relative;
+
+	}
+	.dinam2, .dinam4{
+		width: 169px; 
+	}
+	.dinam1{
+		top: -1px;
+
+	}
+	.dinam2{
+		top: -1px;
+		right: -16px;
+	}
+	.dinam3{
+
+		bottom: -12px;
+	}
+	.dinam4{
+		right: -16px;
+		bottom: -12px;
+	}
+	.emirates{
+		height: 150px;
+		width: 260px;
+		display: block;
+		float: left;
+		margin-left: 135px;
+	}
+	.emirates0{
+		height: 100%;
+	}
+	.emirates1 {
+		height: 105%;
+		width: 64px;
+		background-color: red;
+		display: block;
+		float: left;
+	}
+	.emirates2, .emirates3, .emirates4{
+		height: 50px;
+		width: 75%;
+		background-color: green;
+		display: inline-block;
+	}
+	.emirates3{
+		background-color: white;
+	}
+	.emirates4{
+		background-color: black;
+	}
+	.japon{
+		width: 271px;
+		display: block;
+		float: right;
+		margin-right: 120px
+	}
+	.japon2{
+		width: 80px;
+		height: 80px;
+		background-color: red;
+		z-index: 10;
+		border:none;
+		border-radius: 40px;
+		margin: 36px auto;
+
 	}
 	</style>
 </head>
 <body>
 	<div class="spain">
-		<div class="box1"></div>
-		<div class="box2"></div>
-		<div class="box3"></div>
-		<div> <p> España </p> </div>
+		<div class="spain1"></div>
+		<div class="spain2"></div>
+		<div class="spain3"></div>
+		<div><p>España</p></div>
 	</div>
-	
+	<div class="dinamarca">
+		<div class="dinam1"></div>
+		<div class="dinam2"></div>
+		<div class="dinam3"></div>
+		<div class="dinam4"></div>
+		<div><p>Dinamarca</p></div>
+	</div>
+	<div class="emirates">
+		<div class="emirates0">
+		<div class="emirates1"></div>
+		<div class="emirates2"></div>
+		<div class="emirates3"></div>
+		<div class="emirates4"></div>
+		</div>
+		<div><p>Emiratos Arabes</p></div>
+		</div>
+	<div class="japon">
+		<div class="japon2"></div>
+		<div><p>Japón</p></div>
+	</div>
+		
 </body>
 </html>
